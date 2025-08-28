@@ -1,23 +1,47 @@
 :root {
     --color-bg: #000;
     --color-text: #fff;
-    --color-accent: #4CAF50;
+    --color-accent: #64D281;
     --font-main: Arial, sans-serif;
+    --font-extra-bold: Raleway, ExtraBold;
+    --font-Regular: Raleway, Regular;
+    --font-extra-bold: Raleway, ExtraBold;
+    --font-extra-bold: Raleway, ExtraBold;
+
 }
+
+
 
 * {
     margin: 0%;
     padding: 0%;
 }
+body{
+    
+
+
+}
+
+body p {
+      font-family: 'Poppins', sans-serif;
+      opacity: 50%;
+    }
 
 
 .bg-image {
-    background-image: url(../images/section/first-image.png);
     height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* adjust as needed */
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.50),
+            /* top gradient with 25% opacity */
+            rgba(255, 255, 255, 0)
+            /* fade to transparent */
+        ),
+        url("../images/section/first-image.png") no-repeat center center;
     background-size: cover;
 }
+
 
 /* header */
 .hero {
@@ -38,7 +62,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     background: rgba(0, 0, 0, 0.4);
     /* shadow overlay */
     z-index: 1;
@@ -72,6 +95,7 @@
     display: flex;
     align-items: center;
     gap: 30px;
+    color: white;
 }
 
 .menu a {
@@ -83,6 +107,19 @@
 
 .menu a:hover {
     color: var(--color-accent);
+}
+
+#ntns{
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#btns:hover{
+color: var(--color-white);
 }
 
 /* Button */
@@ -99,6 +136,16 @@
     color: var(--color-text);
 }
 
+.main {
+    background: var(--color-accent);
+    color: var(--color-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
 /* Hero text */
 .hero-text {
     position: relative;
@@ -112,8 +159,8 @@
 /* header end */
 
 /* hero */
+
 .hero {
-    height: 100vh;
     display: flex;
     align-items: center;
     padding: 50px;
@@ -126,7 +173,7 @@
     margin-top: 200px;
     color: var(--color-text);
     font-size: 50px;
-    font-weight: 900;
+    font-family: Raleway, Extrabold;
 }
 
 .hero h1 {
@@ -135,6 +182,7 @@
     margin: 0;
     line-height: 1.1;
     text-transform: uppercase;
+    font-family: var(--font-extra-bold);
 }
 
 .hero-content a {
@@ -158,7 +206,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 60px 60px 60px 0px;
     gap: 40px;
 }
 
@@ -171,6 +219,8 @@
     height: auto;
     object-fit: cover;
     border-radius: 4px;
+    height: 610px;
+    width: 787px;
 }
 
 .about-content {
@@ -189,6 +239,7 @@
     font-size: 40px;
     font-weight: bold;
     margin: 10px 0 20px 0;
+    font-family: var(--font-Regular);
 }
 
 .about-content p {
@@ -204,7 +255,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 60px 0px 60px 60px;
     gap: 40px;
 }
 
@@ -224,6 +275,7 @@
     font-size: 40px;
     font-weight: bold;
     margin: 10px 0 20px 0;
+    font-family: var(--font-extra-bold);
 }
 
 .academy-content h2 span {
@@ -236,15 +288,14 @@
     color: var(--color-muted);
 }
 
-.academy-image {
-    flex: 1;
-}
 
 .academy-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 4px;
+    height: 610px;
+    width: 787px;
 }
 
 /* ecadomyc-end */
@@ -269,9 +320,10 @@
 }
 
 .banner-content h1 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 700;
     margin: 0 0 20px 0;
+    font-family: var(--font-Regular);
 }
 
 .banner-content h1 span {
@@ -281,6 +333,8 @@
 .banner-content img {
     height: 60px;
     vertical-align: middle;
+    height: 610px;
+    width: 787px;
     margin: 0 10px;
 }
 
@@ -297,7 +351,7 @@
 }
 
 .banner-content button:hover {
-    background: #27ae60;
+    background: var(--color-accent);
 }
 
 /* :end */
@@ -308,18 +362,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px;
+    padding: 60px 60px 60px 0px;
     gap: 40px;
 }
 
 .action-image {
     flex: 1;
+    height: 610px;
+    width: 787px;
 }
 
 .action-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    height: 610px;
+    width: 787px;
     border-radius: 4px;
 }
 
@@ -336,9 +394,10 @@
 }
 
 .action-content h2 {
-    font-size: 40px;
+    font-size: 65px;
     font-weight: bold;
     margin: 10px 0 20px 0;
+    font-family: var(--font-Regular);
 }
 
 .action-content h2 span {
@@ -411,7 +470,7 @@
 }
 
 .email-box button {
-    background: #4CAF50;
+    background: var(--color-accent);
     border: none;
     padding: 15px 20px;
     cursor: pointer;
@@ -455,7 +514,7 @@
 }
 
 .social-icons a {
-    background: #4CAF50;
+    background: var(--color-accent);
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -468,7 +527,7 @@
 }
 
 footer {
-    background: #4CAF50;
+    background: var(--color-accent);
     padding: 20px;
     text-align: center;
     color: #000;
