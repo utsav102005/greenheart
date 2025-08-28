@@ -16,16 +16,18 @@
     margin: 0%;
     padding: 0%;
 }
-body{
-    
 
-
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    padding: 20px;
 }
 
 body p {
-      font-family: 'Poppins', sans-serif;
-      opacity: 50%;
-    }
+    font-family: 'Poppins', sans-serif;
+    opacity: 50%;
+}
 
 
 .bg-image {
@@ -69,8 +71,11 @@ body p {
 
 /* Navbar */
 .navbar {
+    position: fixed;
+    background-color: transparent;
     display: flex;
     align-items: center;
+    gap: 100px;
     justify-content: space-between;
     padding: 20px 50px;
     position: relative;
@@ -109,7 +114,7 @@ body p {
     color: var(--color-accent);
 }
 
-#ntns{
+#ntns {
     background: var(--color-accent);
     color: var(--color-white);
     padding: 10px 20px;
@@ -118,8 +123,8 @@ body p {
     text-decoration: none;
 }
 
-#btns:hover{
-color: var(--color-white);
+#btns:hover {
+    color: var(--color-white);
 }
 
 /* Button */
@@ -413,135 +418,193 @@ color: var(--color-white);
 
 /* action-end */
 
-/* footer */
+/* second page */
 
-
-.footer {
-    background-color: black;
-    color: white;
+.bg-section {
+    height: 100vh;
+    background:
+        linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.50),
+            /* top gradient with 25% opacity */
+            rgba(255, 255, 255, 0)
+            /* fade to transparent */
+        ),
+        url("../images/section/taylor-wilcox-4nKOEAQaTgA-unsplash\ \(2\)@2x.png") no-repeat center center;
+    background-size: cover;
 }
 
-.container {
+.join {
+    color: var(--color-text);
+}
+
+.join h3 {
+    padding-top: 273px;
+    font-family: var(--font-Regular);
+    font-size: 81px;
+}
+
+.join h1 {
+    font-family: var(--font-extra-bold);
+    font-size: 171px;
+}
+
+.join p {
+    font-family: var(--font-Regular);
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.green-section {
+    height: 80vh;
+    background-color: var(--color-accent);
+    clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.green {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: var(--color-text);
+
+}
+
+.green h1 {
+    font-family: var(--font-extra-bold);
+    font-size: 110px;
+    padding: 20px;
+}
+
+.green h5 {
+    font-family: var(--font-extra-bold);
+    font-size: 27px;
+    padding: 5px;
+}
+
+.green p {
+    font-family: var(popins-light);
+    font-size: 16px;
+    opacity: 60%;
+    line-height: 20px;
+    max-width: 300px;
+}
+
+.what-we-do {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px;
-    flex-wrap: wrap;
+     align-items: center;
 }
 
-.left {
-    flex: 1;
-    min-width: 300px;
+.texts{
+    margin: auto;
 }
 
-.left h1 {
-    font-size: 50px;
-    margin: 0;
-    font-weight: 300;
+.texts h1 {
+    font-size: 60px;
+    font-family: var(--font-Regular);
 }
 
-.left h1 span {
-    font-weight: 700;
-    font-size: 70px;
-    display: block;
+.texts p {
+    max-width: 475px;
+    opacity: 60%;
+    line-height: 20px;
+    font-size: 15px;
 }
 
-.left p {
-    font-weight: 600;
-    margin: 30px 0 15px 0;
+.texts a {
+    background-color: var(--color-accent);
+    margin: 20px 40px 20px 40px;
 }
 
-.email-box {
+.ethos{
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+
+.our-academies{
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+
+.working{
+     display: flex;
+    justify-content: space-between;
+     align-items: center;
+}
+.black{
+    background-color: var(--color-bg);
     display: flex;
-    align-items: center;
-    background: #111;
-    border-radius: 25px;
-    overflow: hidden;
-    max-width: 400px;
+    justify-content: space-around;
+    color: var(--color-text);
 }
-
-.email-box input {
-    flex: 1;
-    border: none;
-    padding: 15px;
-    outline: none;
-    background: transparent;
-    color: #fff;
-}
-
-.email-box button {
-    background: var(--color-accent);
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    font-size: 18px;
-}
-
-.right {
-    flex: 1;
-    min-width: 300px;
-}
-
-.key-info {
-    margin-bottom: 30px;
-}
-
-.key-info p {
-    margin: 10px 0;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.useful-links {
-    margin-bottom: 30px;
-}
-
-.useful-links h4 {
-    margin-bottom: 10px;
-}
-
-.useful-links a {
-    display: block;
-    color: #aaa;
-    text-decoration: none;
-    margin: 5px 0;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    background: var(--color-accent);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-footer {
-    background: var(--color-accent);
+.black img{
     padding: 20px;
-    text-align: center;
-    color: #000;
 }
 
-footer .partners {
+
+/* footer */
+
+.threefooter{
+    background-color: var(--color-bg);
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 15px;
+    justify-content: space-around;
+    padding: 50px;
+    color: white;
+}
+.footer1{
+    max-width: 430px;
+    align-items: center;
+}
+.footer1 h6{
+font-size: 100px;
+font-family: var(--font-extra-bold);
+}
+.footer1 h4{
+    font-family: var(--font-extra-bold);
+    font-size: 20px;
+    padding: 20px;
+}
+.footer2{
+    color: var(--color-text);
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
-footer .partners img {
-    max-height: 40px;
-    object-fit: contain;
+.footer3{
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.useful-links a{
+color: var(--color-text);
+display: flex;
+flex-direction: column;
+text-decoration: none;
+gap: 20px;
+}
+.social-icons a img{
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    padding: 20px;
+    image-rendering: auto;
+    margin: 20px;
+}
+
+
+.partners{
+    background-color: var(--color-accent);
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+}
+.partners p{
+    font-size: 25px;
+}
+.partnerslogo{
+    display: inline-flex;
+    gap: 25px;
 }
