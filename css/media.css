@@ -1,0 +1,95 @@
+/* header */
+
+ @media(max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+      }
+    }
+
+/* hero */
+
+ @media(max-width: 768px) {
+      .hero {
+        padding: 20px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 50px;
+      }
+    }
+
+    /* second */
+
+    @media(max-width: 900px) {
+      .about-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-content {
+        max-width: 100%;
+      }
+    }
+
+    /* ecadomyc */
+     @media(max-width: 900px) {
+      .academy-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .academy-content {
+        max-width: 100%;
+      }
+    }
+/* banner */
+
+
+ @media(max-width: 768px) {
+      .partnership-banner {
+        height: 350px;
+        padding: 20px;
+      }
+
+      .banner-content h1 {
+        font-size: 28px;
+      }
+
+      .banner-content img {
+        height: 40px;
+      }
+    }
+    /* action */
+     @media(max-width: 900px) {
+      .action-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .action-content {
+        max-width: 100%;
+      }
+    }
+
+
+/* footer */
+
+@media(max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .left h1 {
+        font-size: 40px;
+      }
+      .left h1 span {
+        font-size: 55px;
+      }
+    }
