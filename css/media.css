@@ -85,6 +85,7 @@
 @media(max-width: 768px) {
       .container {
         flex-direction: column;
+        -inline: 16px;
       }
       .left h1 {
         font-size: 40px;
@@ -92,4 +93,14 @@
       .left h1 span {
         font-size: 55px;
       }
+
+      .footer-container{
+    max-width: 100%;
+    padding-inline: 16px;
+}
+
+.bg-section{
+  padding-inline: 16px;
+  width: auto;
+}
     }
