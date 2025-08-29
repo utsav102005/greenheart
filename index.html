@@ -21,22 +21,25 @@
         <div class="container">
             <!-- header -->
             <section class="section">
-                <header class="navbar">
-                    <!-- Logo -->
-                    <div>
-                        <img src="images/vector:logo/logo.svg" alt="" srcset="">
-                    </div>
+<header class="navbar">
+    <!-- Logo -->
+    <div>
+        <img src="images/vector:logo/logo.svg" alt="" srcset="">
+    </div>
 
-                    <!-- Menu -->
-                    <nav class="menu">
-                        <a href="#">WHO WE ARE +</a>
-                        <a href="#">ACADEMIES</a>
-                        <a href="#">WORKING FOR US +</a>
-                        <a href="#">IN ACTION</a>
-                        <a href="#">POLICIES</a>
-                        <a href="#" id="btns">GET IN TOUCH</a>
-                    </nav>
-                </header>
+    <!-- Mobile menu toggle -->
+    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+
+    <!-- Menu -->
+    <nav class="menu" id="menu">
+        <a href="#">WHO WE ARE +</a>
+        <a href="#">ACADEMIES</a>
+        <a href="#">WORKING FOR US +</a>
+        <a href="#">IN ACTION</a>
+        <a href="#">POLICIES</a>
+        <a href="#" id="btns">GET IN TOUCH</a>
+    </nav>
+</header>
 
             </section>
         </div>
@@ -149,7 +152,9 @@
                 <div class="footer1">
                     <h1>GET IN TOUCH TODAY</h1>
                     <h4>FIND OUR MORE ABOUT JOINING OUR PARTNERSHIP</h4>
-                    <form action=""><input type="email"></form>
+<form action="">
+    <input type="email" style="width: 100%; padding: 10px; box-sizing: border-box; border-radius: 4px; border: 1px solid #ccc;">
+</form>
                 </div>
                 <div class="footer2">
                     <h6>KEY INFORMATION</h6>
@@ -190,6 +195,34 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+
+        // Create popup menu container
+        const popupMenu = document.createElement('div');
+        popupMenu.classList.add('menu-popup');
+        popupMenu.innerHTML = menu.innerHTML;
+        document.body.appendChild(popupMenu);
+
+        // Create overlay
+        const overlay = document.createElement('div');
+        overlay.classList.add('menu-popup-overlay');
+        document.body.appendChild(overlay);
+
+        // Toggle popup menu
+        menuToggle.addEventListener('click', () => {
+            popupMenu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        });
+
+        // Close popup when clicking overlay
+        overlay.addEventListener('click', () => {
+            popupMenu.classList.remove('active');
+            overlay.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>

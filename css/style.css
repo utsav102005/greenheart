@@ -19,7 +19,7 @@
 
 .container {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: auto;
     padding-inline: 20px;
     position: relative;
@@ -73,12 +73,14 @@ body p {
 .hero {
     position: relative;
     width: 100%;
-    height: 500px;
+    min-height: 400px;
     /* Adjust as needed */
     background: url("your-shadow-image.jpg") no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* Add a dark overlay for shadow effect */
@@ -95,7 +97,6 @@ body p {
 
 /* Navbar */
 .navbar {
-
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -105,6 +106,89 @@ body p {
     position: relative;
     z-index: 2;
     /* ensures navbar is above overlay */
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+/* Popup menu overlay */
+.menu-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+
+/* Popup menu container */
+.menu-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--color-bg);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 80%;
+    max-width: 400px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Popup menu active */
+.menu-popup.active,
+.menu-popup-overlay.active {
+    display: block;
+}
+
+/* Popup menu links */
+.menu-popup a {
+    display: block;
+    padding: 10px 0;
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.menu-popup a:last-child {
+    border-bottom: none;
+}
+
+/* Hide original menu on tablet */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .menu {
+        display: none !important;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Hide menu on mobile by default */
+@media (max-width: 599px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
 }
 
 /* Logo */
@@ -198,15 +282,15 @@ body p {
 
 .hero-content {
     max-width: 600px;
-    margin-left: 200px;
-    margin-top: 200px;
+    margin-left: 15%;
+    margin-top: 15%;
     color: var(--color-text);
-    font-size: 50px;
+    font-size: clamp(2.5rem, 5vw, 5rem);
     font-family: Raleway, Extrabold;
 }
 
 .hero h1 {
-    font-size: 80px;
+    font-size: clamp(2.5rem, 8vw, 5rem);
     font-weight: 900;
     margin: 0;
     line-height: 1.1;
@@ -245,11 +329,11 @@ body p {
 
 .about-image img {
     width: 100%;
+    max-width: 787px;
     height: auto;
     object-fit: cover;
     border-radius: 4px;
-    height: 610px;
-    width: 787px;
+    aspect-ratio: 787/610;
 }
 
 .about-content {
@@ -265,7 +349,7 @@ body p {
 }
 
 .about-content h2 {
-    font-size: 40px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: bold;
     margin: 10px 0 20px 0;
     font-family: var(--font-Regular);
@@ -301,7 +385,7 @@ body p {
 }
 
 .academy-content h2 {
-    font-size: 40px;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
     font-weight: bold;
     margin: 10px 0 20px 0;
     font-family: var(--font-extra-bold);
@@ -320,11 +404,11 @@ body p {
 
 .academy-image img {
     width: 100%;
+    max-width: 787px;
     height: auto;
     object-fit: cover;
     border-radius: 4px;
-    height: 610px;
-    width: 787px;
+    aspect-ratio: 787/610;
 }
 
 /* ecadomyc-end */
@@ -349,7 +433,7 @@ body p {
 }
 
 .banner-content h1 {
-    font-size: 50px;
+    font-size: clamp(1.5rem, 4vw, 3rem);
     font-weight: 700;
     margin: 0 0 20px 0;
     font-family: var(--font-Regular);
@@ -362,8 +446,8 @@ body p {
 .banner-content img {
     height: 60px;
     vertical-align: middle;
-    height: 610px;
-    width: 787px;
+    max-width: 100%;
+    height: auto;
     margin: 0 10px;
 }
 
@@ -403,10 +487,10 @@ body p {
 
 .action-image img {
     width: 100%;
+    max-width: 787px;
     height: auto;
     object-fit: cover;
-    height: 610px;
-    width: 787px;
+    aspect-ratio: 787/610;
     border-radius: 4px;
 }
 
@@ -423,7 +507,7 @@ body p {
 }
 
 .action-content h2 {
-    font-size: 65px;
+    font-size: clamp(2rem, 6vw, 4rem);
     font-weight: bold;
     margin: 10px 0 20px 0;
     font-family: var(--font-Regular);
@@ -599,6 +683,16 @@ body p {
     justify-content: space-around;
     padding: 50px;
     color: white;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+@media (max-width: 768px) {
+    .threefooter {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+    }
 }
 
 .footer1 {
@@ -607,7 +701,7 @@ body p {
 }
 
 .footer1 h6 {
-    font-size: 100px;
+    font-size: clamp(3rem, 10vw, 6rem);
     font-family: var(--font-extra-bold);
 }
 
@@ -739,19 +833,21 @@ body p {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    width: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     padding-top: 50px;
+    width: 100%;
 }
 
 
 .card {
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     background: white;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     position: relative;
+    margin: 0 auto;
 }
 
 .card img.top-img {
@@ -905,10 +1001,21 @@ body p {
 .members {
     display: flex;
     flex-direction: row;
-    gap: 50px;
-    overflow: scroll;
+    gap: 30px;
+    overflow-x: auto;
     padding-bottom: 50px;
     border-bottom: 5px solid black;
+    scrollbar-width: thin;
+    -ms-overflow-style: none;
+}
+
+.members::-webkit-scrollbar {
+    height: 6px;
+}
+
+.members::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
 }
 
 #membersh1 {
@@ -918,10 +1025,11 @@ body p {
 
 .three-col-div {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     text-align: center;
     padding-block: 50px;
-
 }
 
 .three-col-div h1 {
@@ -932,31 +1040,28 @@ body p {
 
 }
 
-.div1 {
-    height: 415px;
-    width: 450px;
-    background-image: url(../images/section/div1/Rectangle\ 242.png);
+.div1,
+.div2,
+.div3 {
+    height: 300px;
+    width: 100%;
+    max-width: 450px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border-radius: 8px;
+}
+
+.div1 {
+    background-image: url(../images/section/div1/Rectangle\ 242.png);
 }
 
 .div2 {
-    height: 415px;
-    width: 450px;
     background-image: url(../images/section/div2/Rectangle\ 845.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .div3 {
-    height: 415px;
-    width: 450px;
     background-image: url(../images/section/div3/Rectangle\ 846.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 .black-btn {
