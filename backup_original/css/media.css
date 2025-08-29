@@ -1,0 +1,314 @@
+/* ===== RESPONSIVE MEDIA QUERIES ===== */
+/* This file contains responsive styles for screen widths from 1280px down to 375px */
+/* Mobile-first approach with progressive enhancement for larger screens */
+
+/* Large Desktop (1280px and above) - Optimizations */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+  
+  .hero-content {
+    margin-left: 15%;
+  }
+}
+
+/* Desktop (1024px - 1279px) */
+@media (max-width: 1279px) and (min-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding-inline: 40px;
+  }
+  
+  .hero-content {
+    margin-left: 10%;
+    margin-top: 150px;
+  }
+  
+  .hero h1 {
+    font-size: 70px;
+  }
+  
+  .about-image img,
+  .academy-image img,
+  .action-image img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
+/* Tablet Landscape (900px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    padding-inline: 16px;
+  }
+  
+  .hero-content {
+    margin-left: 5%;
+    margin-top: 120px;
+  }
+  
+  .hero h1 {
+    font-size: 60px;
+  }
+  
+  .about-section,
+  .academy-section,
+  .action-section {
+    padding: 40px 16px;
+    gap: 30px;
+  }
+  
+  .about-content,
+  .academy-content,
+  .action-content {
+    max-width: 100%;
+  }
+  
+  .threefooter {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+
+/* Tablet Portrait (768px - 899px) */
+@media (max-width: 899px) and (min-width: 600px) {
+  .container {
+    padding-inline: 20px;
+  }
+  
+  /* Header */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+  }
+  
+  /* Hero */
+  .hero {
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    margin: 100px auto 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+  }
+  
+  /* Sections */
+  .about-section,
+  .academy-section,
+  .action-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+  
+  .about-image img,
+  .academy-image img,
+  .action-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  /* Banner */
+  .partnership-banner {
+    height: 300px;
+    padding: 20px;
+  }
+  
+  .banner-content h1 {
+    font-size: 32px;
+  }
+  
+  .banner-content img {
+    height: 35px;
+  }
+  
+  /* Footer */
+  .threefooter {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .footer1,
+  .footer2,
+  .footer3 {
+    max-width: 100%;
+  }
+}
+
+/* Mobile Landscape (600px - 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+  .container {
+    padding-inline: 16px;
+  }
+  
+  .hero-content {
+    margin: 80px auto 0;
+  }
+  
+  .hero h1 {
+    font-size: 45px;
+  }
+  
+  .about-content h2,
+  .academy-content h2,
+  .action-content h2 {
+    font-size: 32px;
+  }
+  
+  .partnership-banner {
+    height: 250px;
+  }
+  
+  .banner-content h1 {
+    font-size: 28px;
+  }
+  
+  .banner-content img {
+    height: 30px;
+  }
+  
+  .threefooter {
+    padding: 30px 20px;
+  }
+  
+  .partners {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  .partnerslogo {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* Mobile Portrait (375px - 479px) */
+@media (max-width: 479px) and (min-width: 375px) {
+  .container {
+    padding-inline: 12px;
+  }
+  
+  .hero-content {
+    margin: 60px auto 0;
+  }
+  
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.1;
+  }
+  
+  .hero-content a.btn {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+  
+  .about-content h2,
+  .academy-content h2,
+  .action-content h2 {
+    font-size: 28px;
+  }
+  
+  .about-content p,
+  .academy-content p,
+  .action-content p {
+    font-size: 14px;
+  }
+  
+  .partnership-banner {
+    height: 200px;
+  }
+  
+  .banner-content h1 {
+    font-size: 24px;
+  }
+  
+  .banner-content img {
+    height: 25px;
+  }
+  
+  .banner-content button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .footer1 h1 {
+    font-size: 32px;
+  }
+}
+
+/* Small Mobile (below 375px) */
+@media (max-width: 374px) {
+  .container {
+    padding-inline: 8px;
+  }
+  
+  .hero h1 {
+    font-size: 32px;
+  }
+  
+  .hero-content a.btn {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+  
+  .about-content h2,
+  .academy-content h2,
+  .action-content h2 {
+    font-size: 24px;
+  }
+  
+  .partnership-banner {
+    height: 180px;
+  }
+  
+  .banner-content h1 {
+    font-size: 20px;
+  }
+  
+  .banner-content img {
+    height: 20px;
+  }
+  
+  .footer1 h1 {
+    font-size: 28px;
+  }
+}
+
+/* Additional responsive utilities */
+@media (max-width: 768px) {
+  .footer-container {
+    max-width: 100%;
+    padding-inline: 16px;
+  }
+  
+  .bg-section {
+    padding-inline: 16px;
+    width: auto;
+  }
+  
+  /* Hide dropdown arrows on mobile */
+  .dropdown > a::after {
+    display: none;
+  }
+}
+
+/* High DPI/Retina displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optional: Add high-resolution image optimizations */
+}
