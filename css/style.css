@@ -187,8 +187,24 @@ body p {
     gap: 30px;
     color:black;
 }
+.menuslide a{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-block: 50px;
+    color: white;
+    list-style: none;
+    text-align: center;
+}
+.menuslide .btns :hover{
+    color: wheat;
+}
 .menuslide{
     color: #000;
+    width: 100vw;
+    z-index: 999;
+    height: 100vh;
+    background-color: #000;
 }
 
 .menu a {
