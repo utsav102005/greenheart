@@ -12,38 +12,34 @@
     <section class="section-masterpage">
         <div class="container">
             <header class="navbar">
-                <!-- Logo -->
-                <div>
-               <img src="images/section/headerlogo/Group 2611.png" alt="logo" srcset="">                </div>
+
 
                 <!-- Menu -->
-                <nav style="color: black;" class="menu">
-                    <div class="dropdown">
-                        <a href="#">WHO WE ARE + ▼</a>
-                        <div class="dropdown-content">
-                            <a href="#">OUR ETHOS</a>
-                            <a href="#">LEADERSHIP</a>
-                            <a href="#">GOVERNANCE</a>
-                            <a href="#">JOIN US</a>
-                        </div>
-                    </div>
-                    <a href="#"></a>
-                    <a href="#">ACADEMIES</a>
-                    <a href="#">WORKING FOR US +</a>
-                    <a href="#">IN ACTION</a>
-                    <a href="#">POLICIES</a>
-                    <a href="#" class="btn">GET IN TOUCH</a>
-                </nav>
-            </header>
-            <div class="mast2">
+                <img src="images/section/headerlogo/Group 2611.png" alt="logo" srcset=""> <!-- Menu -->
+            <nav class="menu">
+                <a href="#">WHO WE ARE +</a>
+                <a href="#">ACADEMIES</a>
+                <a href="#">WORKING FOR US +</a>
+                <a href="#">IN ACTION</a>
+                <a href="#">POLICIES</a>
+                <a href="#" class="btn">GET IN TOUCH</a>
+                <li class="menu-btn" onclick=showSidebar()><a href="#"><img
+                            src="images/vector:logo/menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                            srcset=""></a></li>
+            </nav>
 
-                <h1>
-                    LEAD <br>
-                    SUPPORT <br>
-                    DEVELOP
-                </h1>
-                <a href="#" class="btn">OUR ACADEMIES</a>
-            </div>
+            <nav class="menuslide" id="menuslide">
+                <li onclick=closeSidebar()><a href="#"><img
+                            src="images/vector:logo/close_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""
+                            srcset=""></a></li>
+                <a href="#">WHO WE ARE +</a>
+                <a href="#">ACADEMIES</a>
+                <a href="#">WORKING FOR US +</a>
+                <a href="#">IN ACTION</a>
+                <a href="#">POLICIES</a>
+                <a href="#" id="btns">GET IN TOUCH</a>
+            </nav>
+            </header>
         </div>
     </section>
 </body>

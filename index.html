@@ -11,30 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 
 </head>
 
 <body>
+
     <div class="bg-image">
         <div class="container">
             <!-- header -->
             <section class="section">
                 <header class="navbar">
-                    <!-- Logo -->
-                    <div>
-                        <img src="images/section/headerlogo/Group 2611.png" alt="logo" srcset="">
-                    </div>
-
-                    <!-- Mobile menu toggle -->
-                    <div class="menu-toggle" id="menuToggle">&#9776;</div>
-                    <div class="menu-popup-overlay" id="menuOverlay"></div>
-                    <nav class="menu-popup" id="menuPopup">
-                        <button class="close-btn" id="closeMenu">&times;</button>
 
                         <!-- Menu -->
                         <nav class="menu" id="menu">
+                            <a href="#">WHO WE ARE +</a>
+                            <a href="#">ACADEMIES</a>
+                            <a href="#">WORKING FOR US +</a>
+                            <a href="#">IN ACTION</a>
+                            <a href="#">POLICIES</a>
+                            <a href="#" id="btns">GET IN TOUCH</a>
+                        </nav>
+
+                        <nav class="menuslide" id="menuslide">
                             <a href="#">WHO WE ARE +</a>
                             <a href="#">ACADEMIES</a>
                             <a href="#">WORKING FOR US +</a>
@@ -199,33 +198,17 @@
             </div>
         </div>
     </footer>
+<script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
 
-    <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menu = document.getElementById('menu');
 
-        // Create popup menu container
-        const popupMenu = document.createElement('div');
-        popupMenu.classList.add('menu-popup');
-        popupMenu.innerHTML = menu.innerHTML;
-        document.body.appendChild(popupMenu);
-
-        // Create overlay
-        const overlay = document.createElement('div');
-        overlay.classList.add('menu-popup-overlay');
-        document.body.appendChild(overlay);
-
-        // Toggle popup menu
-        menuToggle.addEventListener('click', () => {
-            popupMenu.classList.toggle('active');
-            overlay.classList.toggle('active');
-        });
-
-        // Close popup when clicking overlay
-        overlay.addEventListener('click', () => {
-            popupMenu.classList.remove('active');
-            overlay.classList.remove('active');
-        });
     </script>
 </body>
 

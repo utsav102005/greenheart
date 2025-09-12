@@ -1,3 +1,10 @@
+@media (max-width:1920px) {
+    .menuslide{
+        display: none;
+    }
+}
+
+
 @media (max-width: 768px) {
     .threefooter {
         flex-direction: column;
@@ -5,11 +12,27 @@
         padding: 30px 20px;
     }
 
+    .black-menu {
+        display: none;
+    }
+    .navbar{
+        display: none;
+    }
+    .menuslide{
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: white;
+        align-items: center;
+        text-align: center;
+    }
+
     .footer1,
     .footer2,
     .footer3 {
         max-width: 100%;
-     }
+    }
+
     .menu ul li {
         position: fixed;
         left: 0;
@@ -19,9 +42,10 @@
         flex-direction: column;
         color: white;
         background-color: black;
-        
+
     }
-    .menu ul li a{
+
+    .menu ul li a {
         display: flex;
         flex-direction: column;
         margin-block: 100px;
@@ -317,21 +341,308 @@
         padding: 10px;
     }
 
-    .section-title  {
+    .section-title {
         font-size: 35px;
     }
 
 
-    .teacher{
+    .teacher {
         flex-direction: column;
         gap: 20px;
         overflow: hidden;
     }
-    .panel-section{
 
-height: 100vh;
+    .panel-section {
+
+        height: 100vh;
     }
-    .no-space p{
-font-size: 30px;
+
+    .no-space p {
+        font-size: 30px;
     }
+}
+
+@media (max-width: 375px) {
+    .footer1 h6 {
+        font-size: 2rem;
+    }
+
+    .footer1 h4 {
+        font-size: 0.9rem;
+    }
+
+    .footer2 {
+        font-size: 14px;
+    }
+
+    .social-icons a img {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+    }
+
+    .partnerslogo {
+        overflow: hidden;
+        display: none;
+    }
+
+    .working {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .working img {
+        width: 100vw;
+    }
+
+    .black {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .our-academies {
+        flex-direction: column;
+    }
+
+    .our-academies img {
+        width: 100vw;
+    }
+
+    .ethos {
+        flex-direction: column;
+    }
+
+    .ethos img {
+        width: 100vw;
+    }
+
+    .what-we-do {
+        flex-direction: column;
+
+    }
+
+    .what-we-do img {
+        width: 100vw;
+    }
+
+    .green-section {
+        overflow: scroll;
+    }
+
+    .texts h1 {
+        font-size: 40px;
+        padding-top: 10px;
+    }
+
+    .join {
+        color: white;
+    }
+
+    .bg-section {
+        overflow: hidden;
+    }
+
+    .join h1 {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .join p {
+        display: none;
+    }
+
+    .support-detail h1 {
+        font-size: 50px;
+
+    }
+
+    .support-detail {
+        margin-top: -120px;
+    }
+
+    .support-detail p {
+        font-size: 10px;
+        color: black;
+        overflow: hidden;
+        line-height: normal;
+    }
+
+    .BENEFITS {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BENEFITS h1 {
+        font-size: 30px;
+    }
+
+    .three-circle {
+        overflow: scroll;
+        gap: 5px;
+    }
+
+    .three-circle h5 {
+        padding-block: 5px;
+    }
+
+    .green h1 {
+        font-size: 20px;
+    }
+
+    .green {
+        flex-direction: column;
+    }
+
+    .bg-only {
+        size: 100vw;
+    }
+
+    .jason {
+        flex-direction: column;
+
+    }
+
+    .jason img {
+        width: 100vw;
+    }
+
+    .member-detail h1 {
+        padding-top: 30px;
+        color: black;
+        font-size: 30px;
+    }
+
+    .more-info {
+        padding-top: 500px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .partners-section img {
+        width: 80vw;
+    }
+
+    .open {
+        flex-direction: column;
+    }
+
+    .governer-para h1 {
+        font-size: 55px;
+    }
+
+    .leaders {
+        flex-direction: column;
+        gap: 30px;
+        margin: auto;
+    }
+
+    .leaders img {
+        width: 90vw;
+    }
+
+    .campign-grid img {
+        width: 90vw;
+    }
+
+    .campign-grid {
+        overflow: scroll;
+        gap: 50px;
+        margin-top: 100px;
+    }
+
+    .container p {
+        margin-bottom: 40px;
+    }
+
+    .aims h1 {
+        font-size: 50px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        overflow: hidden;
+        padding: 16px;
+    }
+
+    .function {
+        flex-direction: column;
+        gap: 20px;
+        margin-inline: 16px;
+    }
+
+    .function img {
+        width: 100vw;
+
+    }
+
+    .right p {
+        display: none;
+    }
+
+    .panel-section {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .action-main h1 {
+        font-size: 50px;
+        padding-top: 0px;
+        margin-top: 20px;
+    }
+
+    .action-main p {
+        max-width: 100vh;
+    }
+
+    .logos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main-partners h1 {
+
+        font-size: 30px;
+
+    }
+
+    .quote-section {
+        flex-direction: column;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .fl img {
+        width: 80vw;
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 35px;
+    }
+
+
+    .teacher {
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    .panel-section {
+
+        height: 100vh;
+    }
+
+    .no-space p {
+        font-size: 30px;
+    }
+
+    .black-menu {
+        display: none;
+    }
+
+
+    
 }

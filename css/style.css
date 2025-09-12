@@ -185,7 +185,10 @@ body p {
     display: flex;
     align-items: center;
     gap: 30px;
-    color: white;
+    color:black;
+}
+.menuslide{
+    color: #000;
 }
 
 .menu a {
