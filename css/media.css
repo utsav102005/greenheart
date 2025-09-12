@@ -723,12 +723,20 @@
         height: 40vh;
 
     }
-.bg-image{
-    overflow: hidden;
-}
 
- .menu-btn {
+    .bg-image {
+        overflow: hidden;
+    }
+
+    .menu-btn {
         display: block;
     }
 
+    .navbar img {
+        size: 20px;
+    }
+
+    .hero-content h1 {
+        size: 30px;
+    }
 }

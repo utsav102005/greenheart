@@ -98,17 +98,35 @@ body p {
 /* Navbar */
 .navbar {
     background-color: transparent;
-    display: flex;
-    align-items: center;
-    gap: 100px;
-    justify-content: space-between;
     padding: 20px 50px;
-    position: relative;
-    z-index: 2;
-    /* ensures navbar is above overlay */
+    background-color: black;
+    z-index: 999;
 }
 
+.navbar-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+*/ */
+
 /* Mobile menu toggle */
+.menu a {
+    color: white;
+}
+
+.navbar-wraper a {
+    color: white;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
