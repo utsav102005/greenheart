@@ -139,6 +139,7 @@
     .social-icons {
         display: flex;
         gap: 15px;
+        width: 100%;
         margin-top: 10px;
     }
 
@@ -206,13 +207,13 @@
 
     .what-we-do {
         flex-direction: column;
-        padding-inline: 16px;
-
+        margin-left: 0;
     }
 
-    .what-we-do img {
-        width: 100vw;
+    .section-image img {
+        margin: 16px;
     }
+
 
     .green-section {
         overflow: scroll;
@@ -870,5 +871,27 @@
 
     .containerp p {
         padding-left: 30px;
+    }
+
+    .what-we-do img {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .section-tag {
+        padding-top: 10px;
+    }
+
+    .container-vacanecies h1 {
+        font-size: 50px;
+    }
+
+    .container-vacanecies p {
+        font-size: 10px;
+    }
+
+    .social-icons {
+        justify-content: space-around;
+        width: 90vw;
     }
 }

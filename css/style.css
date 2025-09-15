@@ -604,8 +604,10 @@ body p {
     display: flex;
     gap: 40px;
     justify-content: space-around;
-    align-items: center;
+    align-items: left;
+    text-align: left;
 }
+
 
 .texts {
     margin: auto;
@@ -983,6 +985,7 @@ body p {
 
 .governer-para h1 {
     font-size: 80px;
+    color: black;
     padding-block: 10px;
 }
 
@@ -1004,6 +1007,7 @@ body p {
 .members {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     gap: 30px;
     overflow-x: auto;
     padding-bottom: 50px;
@@ -1090,7 +1094,7 @@ body p {
 
 .jason {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: var(--color-text);
 }
@@ -2045,7 +2049,7 @@ p {
 }
 
 .section-image img {
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
 }
@@ -2065,6 +2069,7 @@ p {
 
 .content-text {
     font-size: 1rem;
+    max-width: 1300px;
     color: #444;
     margin-bottom: 2rem;
 }
@@ -2215,4 +2220,24 @@ h1 span {
 
 .four-line {
     padding-block: 40px;
+}
+
+.hero-sectoin-vacances {
+    background-image: url(../images/section/brooke-cagle--uHVRvDr7pg-unsplash/brooke-cagle--uHVRvDr7pg-unsplash.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-vacanecies h1 {
+    padding-top: 350px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.container-vacanecies p {
+    font-size: 20px;
+    text-align: center;
+    color: white;
 }
