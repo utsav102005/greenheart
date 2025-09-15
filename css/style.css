@@ -67,8 +67,6 @@ body p {
     font-family: var(--font-extra-bold);
 }
 
-
-
 /* header */
 .hero {
     position: relative;
@@ -109,18 +107,10 @@ body p {
     align-items: center;
 }
 
-.hero-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
 
-*/ */
-
-/* Mobile menu toggle */
-.menu a {
-    color: white;
+.hero-sectoin-index {
+    background-image: url(../images/section/first-image.png);
+    background-size: cover;
 }
 
 .navbar-wraper a {
@@ -223,9 +213,9 @@ body p {
 
 .menu a {
     text-decoration: none;
-    color: var(--color-white);
     font-weight: bold;
     font-size: 14px;
+    color: white;
 }
 
 .menu a:hover {
@@ -292,7 +282,6 @@ body p {
 
 .hero-content {
     max-width: 600px;
-    margin-left: 15%;
     margin-top: 15%;
     color: var(--color-text);
     font-size: clamp(2.5rem, 5vw, 5rem);
@@ -311,6 +300,7 @@ body p {
 .hero-content a {
     font-size: 20px;
     cursor: pointer;
+    margin-bottom: 20px;
 }
 
 .hero button:hover {
@@ -333,9 +323,7 @@ body p {
     gap: 40px;
 }
 
-.about-image {
-    flex: 1;
-}
+.about-image {}
 
 .about-image img {
     width: 100%;
@@ -346,8 +334,7 @@ body p {
 }
 
 .about-content {
-    flex: 1;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 .about-content small {
@@ -377,13 +364,19 @@ body p {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 0px 60px 60px;
+    padding: 60px 60px 60px 0px;
     gap: 40px;
 }
 
 .academy-content {
-    flex: 1;
-    max-width: 500px;
+    max-width: 550px;
+}
+
+.hero-sectoin-Acedemics {
+
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)) 0% 0% / cover, url(../images/vector:logo/academics-back-image/acton-crawford-z3kZ__Ycpc8-unsplash.png) center center no-repeat;
 }
 
 .academy-content small {
@@ -487,14 +480,10 @@ body p {
     gap: 40px;
 }
 
-.action-image {
-    flex: 1;
-}
-
 .action-image img {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 70%;
     object-fit: cover;
     border-radius: 4px;
 }
@@ -547,31 +536,18 @@ body p {
     background-size: cover;
 }
 
-.a-bg-section {
-    height: 100vh;
-    background:
-        linear-gradient(to bottom,
-            rgba(0, 0, 0, 0.50),
-            /* top gradient with 25% opacity */
-            rgba(255, 255, 255, 0)
-            /* fade to transparent */
-        ),
-        url("../images/vector:logo/academics-back-image/acton-crawford-z3kZ__Ycpc8-unsplash.png") no-repeat center center;
-    background-size: cover;
-
-}
-
 .main-trust {
     position: sticky;
 }
 
 .join {
     color: var(--color-text);
-    position: sticky;
+    padding-left: 200px;
 }
 
 .join h3 {
-    padding-top: 273px;
+    padding-top: 220px;
+    align-items: center;
     font-family: var(--font-Regular);
     font-size: 81px;
 }
@@ -584,24 +560,25 @@ body p {
 .join p {
     font-family: var(--font-Regular);
     font-size: 18px;
+    color: white;
     max-width: 600px;
 }
 
 .green-section {
     height: 80vh;
-    margin-top: -70px;
+    margin-top: -150px;
     background-color: var(--color-accent);
     clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.green {
+/* .green {
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
     text-align: center;
     color: var(--color-text);
 
-}
+} */
 
 .green h1 {
     font-family: var(--font-extra-bold);
@@ -625,12 +602,14 @@ body p {
 
 .what-we-do {
     display: flex;
-    justify-content: space-between;
+    gap: 40px;
+    justify-content: space-around;
     align-items: center;
 }
 
 .texts {
     margin: auto;
+    align-items: center;
     color: black;
 }
 
@@ -651,6 +630,10 @@ body p {
     margin: 20px 40px 20px 40px;
 }
 
+.heding {
+    margin-left: 100px;
+}
+
 .ethos {
     display: flex;
     justify-content: space-between;
@@ -659,14 +642,28 @@ body p {
 
 .our-academies {
     display: flex;
+    gap: 40px;
     justify-content: space-between;
     align-items: center;
 }
 
 .working {
     display: flex;
+    gap: 40px;
     justify-content: space-between;
     align-items: center;
+}
+
+.working-as {
+    text-align: center;
+    padding-left: 50px;
+
+}
+
+.working-as h1 {
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
 }
 
 .black {
@@ -674,6 +671,10 @@ body p {
     display: flex;
     justify-content: space-around;
     color: var(--color-text);
+}
+
+.black .text h1 {
+    color: white;
 }
 
 .black img {
@@ -739,7 +740,6 @@ body p {
     background-color: var(--color-accent);
     border-radius: 50%;
     padding: 20px;
-    image-rendering: auto;
     margin: 20px;
 }
 
@@ -1356,6 +1356,7 @@ body p {
 .green {
     background-color: var(--color-accent);
     display: flex;
+    padding-top: 150px;
     justify-content: space-around;
     color: var(--color-text);
 }
@@ -1383,13 +1384,11 @@ body p {
 
 .ethos {
     display: flex;
-    flex-direction: column;
     color: var(--color-text);
 
 }
 
 .ethos h1 {
-    padding-top: 300px;
     font-size: 80px;
 }
 
@@ -2021,13 +2020,6 @@ p {
     padding-bottom: 150px;
 }
 
-.what-we-do {
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 2rem 1rem;
-}
 
 .section-tag {
     font-size: 0.9rem;
@@ -2087,4 +2079,140 @@ p {
     margin-bottom: 1rem;
     font-size: 1rem;
     color: #333;
+}
+
+.hero-sectoin-work {
+    height: 100vh;
+    background-image: url(../images/section/for-as.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.hero-sectoin-policy {
+    height: 100vh;
+    background-image: url(../images/section/Subtraction\ 5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    text-align: center;
+}
+
+.btns a {
+
+    background-color: var(--color-accent);
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+.btns {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hero-sectoin-policy h1 {
+    font-size: 80px;
+    padding-top: 250px;
+    color: white;
+}
+
+.hero-sectoin-policy p {
+    font-size: 16px;
+    color: white;
+    opacity: 1;
+    max-width: 550px;
+    margin: auto;
+}
+
+.policy-data {
+    margin-top: -75px;
+    clip-path: polygon(0 9%, 100% 0, 100% 92%, 0% 100%);
+    background-color: var(--color-accent);
+}
+
+.policy-info {
+    padding-top: 100px;
+}
+
+.policy-info h3 {
+    font-size: 50px;
+    color: var(--color-text);
+}
+
+.sectionss {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.sectionss {
+    padding-top: 30px;
+    color: var(--color-text);
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h1 span {
+    font-weight: 800;
+}
+
+.policies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.policy-card {
+    background: #66d187;
+    color: white;
+    padding: 25px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon::before {
+    content: "↓";
+    color: #66d187;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.containerp h2 {
+    margin: auto;
+    font-size: 45px;
+    padding-left: 350px;
+}
+
+.containerp p {
+    margin: auto;
+    opacity: 1;
+    padding-left: 350px;
+}
+
+
+.policies {
+    margin: auto;
+}
+
+.four-line {
+    padding-block: 40px;
 }

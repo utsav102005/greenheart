@@ -51,6 +51,7 @@
 
     .menu ul li a {
         display: flex;
+        color: white;
         flex-direction: column;
         margin-block: 100px;
         text-align: center;
@@ -205,6 +206,7 @@
 
     .what-we-do {
         flex-direction: column;
+        padding-inline: 16px;
 
     }
 
@@ -737,6 +739,136 @@
     }
 
     .hero-content h1 {
-        size: 30px;
+        font-size: 30px;
+
+    }
+
+    .btn {
+        size: 40%;
+    }
+
+    .about-section {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .academy-section {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .action-section {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .join h3 {
+        font-size: 60px;
+    }
+
+    .join {
+        padding: 16px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .heding {
+        padding: 16px;
+    }
+
+    .navbar-wraper img {
+        size: 50px;
+    }
+
+    .Academics h3 {
+        font-size: 30px;
+    }
+
+    .Academics h1 {
+        font-size: 50px;
+    }
+
+    .Academics p {
+        color: white;
+    }
+
+    .hero-content {
+        margin-left: 5%;
+    }
+
+    .working-as {
+        padding-left: 0%;
+        padding: 16px;
+        width: 90%;
+    }
+
+    .support-detail h1 {
+        font-size: 30px;
+    }
+
+    .support-detail {
+        height: 200px;
+    }
+
+    .three-circle {
+        flex-direction: column;
+        gap: 150px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .BENEFITS h1 {
+        padding-top: 20px;
+    }
+
+    .green {
+        display: none;
+    }
+
+    .action-main h1 {
+        padding-top: 50px;
+        font-size: 50px;
+    }
+
+    .information h1 {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+
+    .btns {
+        overflow: scroll;
+    }
+
+    .sectionss {
+        flex-direction: column;
+    }
+
+    .policy-info h3 {
+        font-size: 40px;
+    }
+
+    .policy-data {
+        clip-path: polygon(0 0, 100% 0, 99% 100%, 0% 100%);
+    }
+
+    .infor {
+        display: none;
+    }
+
+    .policies {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 16px;
+    }
+
+    .containerp h2 {
+        padding-left: 30px;
+    }
+
+    .containerp p {
+        padding-left: 30px;
     }
 }
