@@ -22,6 +22,7 @@
     max-width: 1268px;
     margin: 0 auto;
     padding: 0 16px;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -1156,10 +1157,17 @@ body h1 {
 }
 
 .jason {
+    padding: 30px;
     display: flex;
+    gap: 30px;
     justify-content: space-around;
     align-items: center;
     color: var(--color-text);
+}
+
+.jason-detail h1 {
+    color: black;
+    font-size: 35px;
 }
 
 .member-detail {
@@ -1275,8 +1283,6 @@ body h1 {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
-    visibility: hidden;
-    opacity: 0;
 }
 
 .overlay:target {
