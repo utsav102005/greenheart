@@ -30,7 +30,7 @@
 }
 
 body p {
-    font-family: 'Poppins', sans-serif;
+    font-family: popins;
 }
 
 
@@ -382,8 +382,9 @@ body p {
     color: white;
 }
 
-.Academics-detail {
-    margin-top: 300px;
+.academics-detail {
+    padding-block: 340px;
+    padding-inline: 190px;
 }
 
 .Academics p {
@@ -395,7 +396,8 @@ body p {
 
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)) 0% 0% / cover, url(../images/vector:logo/academics-back-image/acton-crawford-z3kZ__Ycpc8-unsplash.png) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)) 0% 0% / cover, url(../images/vector:logo/academics-back-image/acton-crawford-z3kZ__Ycpc8-unsplash.png);
+    background-size: cover;
 }
 
 .academy-content small {
@@ -659,7 +661,8 @@ body p {
 }
 
 .heding {
-    margin-left: 100px;
+    margin-inline: 100px;
+    margin-block: 30px;
 }
 
 .ethos {
@@ -697,6 +700,7 @@ body p {
 .black {
     background-color: var(--color-bg);
     display: flex;
+    margin-block: 30px;
     justify-content: space-around;
     color: var(--color-text);
 }
@@ -866,7 +870,6 @@ body p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    padding-top: 50px;
     width: 100%;
 }
 
@@ -1997,6 +2000,10 @@ p {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
+}
+
+.logos img {
+    margin: auto;
 }
 
 .vacances-section {
