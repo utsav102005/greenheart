@@ -19,7 +19,7 @@
 
 .container {
     width: 100%;
-    max-width: 100%;
+    max-width: 1268px;
     margin: 0 auto;
     padding: 0 16px;
     box-sizing: border-box;
@@ -27,6 +27,24 @@
 
 .footer-container {
     max-width: 100%;
+}
+
+.cir {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.cccc h5 {
+    max-width: 280px;
+    font-size: 26px;
+    text-align: center;
+}
+
+.circle-1 {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 6px 0px 50px 17px #00000010;
 }
 
 body p {
@@ -416,7 +434,7 @@ body h1 {
 }
 
 .academy-content h2 {
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: 60px;
     font-weight: bold;
     margin: 10px 0 20px 0;
     font-family: var(--font-extra-bold);
@@ -432,6 +450,9 @@ body h1 {
     color: var(--color-muted);
 }
 
+.academy-content {
+    max-width: 800px;
+}
 
 .academy-image img {
     width: 100%;
@@ -612,6 +633,7 @@ body h1 {
 .green h1 {
     font-family: var(--font-extra-bold);
     font-size: 110px;
+    color: var(--color-bg);
     padding: 20px;
 }
 
@@ -624,7 +646,7 @@ body h1 {
 .green p {
     font-family: var(popins-light);
     font-size: 16px;
-    opacity: 60%;
+    color: var(--color-text);
     line-height: 20px;
     max-width: 300px;
 }
@@ -694,18 +716,6 @@ body h1 {
     align-items: center;
 }
 
-.working-as {
-    text-align: center;
-    padding-left: 50px;
-
-}
-
-.working-as h1 {
-    font-size: 100px;
-    text-align: center;
-    justify-content: center;
-}
-
 .black {
     background-color: var(--color-bg);
     display: flex;
@@ -720,6 +730,23 @@ body h1 {
 
 .black img {
     padding: 20px;
+}
+
+
+.working-as {
+    text-align: center;
+    padding-top: 250px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.working-as h1 {
+    color: var(--color-text);
+    font-size: 81px;
+}
+
+.working-as p {
+    color: var(--color-text);
 }
 
 
@@ -888,7 +915,7 @@ body h1 {
     max-width: 420px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
     position: relative;
     margin: 0 auto;
 }
@@ -1337,7 +1364,6 @@ body h1 {
 
 .support-detail h1 {
     font-size: 91px;
-    padding-top: 50px;
 }
 
 .support-detaill p {
@@ -1348,17 +1374,24 @@ body h1 {
 }
 
 .three-circle {
+    margin: auto;
+    position: relative;
+    z-index: 100;
     display: flex;
-    justify-content: space-between;
-    margin-top: -100;
+    top: 20px;
+    justify-content: space-around;
+    gap: 50px;
+    margin-top: -80px;
 }
 
 .img {
     width: 250px;
     height: 250px;
-    box-shadow: 0px 0px 50px 17px rgba(0, 0, 0, 0.42);
+
     border-radius: 50%;
 }
+
+.cccc {}
 
 .img img {
     padding: 35px;
@@ -1378,9 +1411,11 @@ body h1 {
 }
 
 .BENEFITS h1 {
+    position: relative;
+    z-index: 99;
     font-size: 130px;
     text-align: center;
-    padding-top: 250px;
+    padding-top: 50px;
 }
 
 .bg-only {
@@ -1397,9 +1432,18 @@ body h1 {
 .green {
     background-color: var(--color-accent);
     display: flex;
-    padding-top: 150px;
+    margin-block: 30px;
     justify-content: space-around;
     color: var(--color-text);
+}
+
+.green img {
+    height: 100%;
+    width: auto;
+}
+
+.green .btn-white {
+    margin-inline: 100px;
 }
 
 .btn-white {
@@ -1879,11 +1923,18 @@ p {
 
 .quote-section {
     height: 600px;
+    color: var(--color-text);
     justify-content: center;
     display: flex;
     align-items: center;
     background-color: var(--color-accent);
     padding: 50px;
+}
+
+.quote p {
+    color: var(--color-text);
+    font-size: 43px;
+    font-weight: 1000;
 }
 
 .profile {
@@ -2144,7 +2195,7 @@ p {
 }
 
 .hero-sectoin-work {
-    height: 100vh;
+    height: 70vh;
     background-image: url(../images/section/for-as.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -2312,4 +2363,14 @@ h1 span {
 
 .menu-btn-close {
     display: none;
+}
+
+.better {
+    color: var(--color-accent);
+    font-size: 93px;
+}
+
+.life {
+    font-size: 93px;
+    font-weight: 400;
 }

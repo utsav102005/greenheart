@@ -809,15 +809,29 @@
     .working-as {
         padding-left: 0%;
         padding: 16px;
-        width: 90%;
+        width: 100%;
+        max-width: none;
     }
+
+    .working-as h1 {
+        font-size: 30px;
+        padding-top: 50px;
+    }
+
+    .working-as p {
+        display: none;
+    }
+
+
+
 
     .support-detail h1 {
         font-size: 30px;
+        padding-top: 0%;
     }
 
     .support-detail {
-        height: 200px;
+        height: 100px;
     }
 
     .three-circle {
