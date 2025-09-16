@@ -58,6 +58,11 @@
         font-size: 25px;
     }
 
+    .menu-btn-close {
+        display: block;
+    }
+
+
 }
 
 @media (max-width: 768px) {
@@ -110,6 +115,7 @@
         background-color: black;
 
     }
+
 
     .menu ul li a {
         display: flex;

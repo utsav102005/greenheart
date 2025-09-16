@@ -31,7 +31,6 @@
 
 body p {
     font-family: 'Poppins', sans-serif;
-    opacity: 50%;
 }
 
 
@@ -372,6 +371,26 @@ body p {
     max-width: 550px;
 }
 
+.Academics h3 {
+    font-size: 40px;
+    padding-left: 20px;
+    color: var(--color-text);
+}
+
+.Academics h1 {
+    font-size: 100px;
+    color: white;
+}
+
+.Academics-detail {
+    margin-top: 300px;
+}
+
+.Academics p {
+    color: white;
+    opacity: 1;
+}
+
 .hero-sectoin-Acedemics {
 
     height: 100vh;
@@ -600,12 +619,19 @@ body p {
     max-width: 300px;
 }
 
-.what-we-do {
+.what-we-do-class {
     display: flex;
+    flex-direction: column;
     gap: 40px;
     justify-content: space-around;
     align-items: left;
     text-align: left;
+}
+
+.what-we-do {
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
 }
 
 
@@ -663,7 +689,7 @@ body p {
 }
 
 .working-as h1 {
-    font-size: 60px;
+    font-size: 100px;
     text-align: center;
     justify-content: center;
 }
@@ -973,8 +999,7 @@ body p {
 }
 
 .governer-para {
-    padding-top: 100px;
-    padding-block: 100px;
+    margin: 100px;
 }
 
 .governer-para p {
@@ -1387,13 +1412,19 @@ body p {
 }
 
 .ethos {
+    background-image: url(../images/section/pexels-cottonbro-4065158/pexels-cottonbro-4065158.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
-    color: var(--color-text);
+    flex-direction: column;
 
 }
 
 .ethos h1 {
     font-size: 80px;
+    margin-top: 450px;
+    color: var(--color-text);
 }
 
 .ethos p {
@@ -1464,6 +1495,7 @@ body p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    margin: auto;
 }
 
 .info-section {
@@ -1517,6 +1549,10 @@ body p {
 
 .contact a {
     color: #000;
+}
+
+.contact {
+    padding-top: 100px;
 }
 
 .contact-section {
@@ -1934,11 +1970,17 @@ p {
 
 }
 
+
 .main-partners h1 {
     color: var(--color-text);
     margin: auto;
     font-size: 70px;
     padding-top: 150px;
+}
+
+.main-partners {
+    background-color: var(--color-bg);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 91%);
 }
 
 .main-partners p {
@@ -1955,7 +1997,6 @@ p {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
     align-items: center;
-    margin: auto;
 }
 
 .vacances-section {
@@ -2240,4 +2281,19 @@ h1 span {
     font-size: 20px;
     text-align: center;
     color: white;
+}
+
+.partnersdetail {
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.partnersdetail p {
+    max-width: 500px;
+    margin: auto;
+}
+
+.menu-btn-close {
+    display: none;
 }
