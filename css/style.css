@@ -5,7 +5,7 @@
     --font-main: Arial, sans-serif;
     --font-extra-bold: Raleway, ExtraBold;
     --font-Regular: Raleway, Regular;
-    --font-extra-bold: Raleway, ExtraBold;
+    --font-extra-bold: Raleway;
     --font-extra-bold: Raleway, ExtraBold;
 
 }
@@ -30,7 +30,14 @@
 }
 
 body p {
-    font-family: popins;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+body h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
 }
 
 
@@ -634,6 +641,7 @@ body p {
 .what-we-do {
     display: flex;
     gap: 40px;
+    padding-block: 10px;
     justify-content: space-around;
 }
 
@@ -706,7 +714,7 @@ body p {
     color: var(--color-text);
 }
 
-.black .text h1 {
+.black .texts {
     color: white;
 }
 
