@@ -1440,6 +1440,7 @@ body h1 {
     margin-block: 30px;
     justify-content: space-around;
     color: var(--color-text);
+    padding-top: 170px;
 }
 
 .green img {
