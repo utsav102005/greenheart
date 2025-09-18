@@ -30,7 +30,7 @@
 }
 
 .cir {
-    border: 1px solid black;
+    border: 1px solid rgba(113, 108, 108, 0.207);
     padding: 20px;
     border-radius: 50%;
 }
@@ -38,6 +38,7 @@
 .cccc h5 {
     max-width: 280px;
     font-size: 26px;
+    padding-block: 50px;
     text-align: center;
 }
 
@@ -799,9 +800,11 @@ body h1 {
 .useful-links a {
     color: var(--color-text);
     display: flex;
+    gap: 40px;
+    font-size: 10px;
     flex-direction: column;
     text-decoration: none;
-    gap: 20px;
+    padding-block: 10px;
 }
 
 .social-icons a img {
@@ -822,11 +825,14 @@ body h1 {
 
 .partners p {
     font-size: 25px;
+    width: 30%;
 }
 
 .partnerslogo {
     display: inline-flex;
-    gap: 25px;
+    width: 100%;
+    gap: 40px;
+    justify-content: space-around;
 }
 
 
@@ -1363,13 +1369,22 @@ body h1 {
 
 .support-detail {
     display: flex;
+    padding-block:200px;
     gap: 200px;
     padding-top: 100px;
 }
 
 .support-detail h1 {
+    font-weight: 800;
     font-size: 91px;
 }
+
+.support-detail h1 span {
+    font-size: 91px;
+    font-weight: 400;
+}
+
+
 
 .support-detaill p {
     font-size: 16px;
@@ -2379,4 +2394,8 @@ h1 span {
 .life {
     font-size: 93px;
     font-weight: 400;
+}
+
+.footer1 span {
+    font-size: 70px;
 }

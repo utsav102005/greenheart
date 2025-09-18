@@ -249,7 +249,10 @@
 
     .support-detail h1 {
         font-size: 50px;
+    }
 
+    .support-detail h1 span {
+        font-size: 50px;
     }
 
     .support-detail {
@@ -810,8 +813,7 @@
     .working-as {
         padding-left: 0%;
         padding: 16px;
-        width: 100%;
-        max-width: none;
+        padding-top: 200px;
     }
 
     .working-as h1 {
