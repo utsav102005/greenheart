@@ -1,10 +1,10 @@
-@media (max-width:1920px) {
+@media (max-width:1440px) {
     .menu-btn {
         display: none;
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:1200px) {
     .menu-btn {
         display: block;
         color: black;
@@ -157,7 +157,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576px) {
     .footer1 h6 {
         font-size: 2rem;
     }
