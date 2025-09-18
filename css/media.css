@@ -783,7 +783,7 @@
     }
 
     .heding {
-        padding: 16px;
+        margin-inline: 10px;
     }
 
     .navbar-wraper img {
@@ -792,6 +792,7 @@
 
     .Academics h3 {
         font-size: 30px;
+        padding-left: 0%;
     }
 
     .Academics h1 {
@@ -913,5 +914,27 @@
     .social-icons {
         justify-content: space-around;
         width: 90vw;
+    }
+
+    .better,
+    .life {
+        font-size: 50px;
+    }
+
+    .academics-detail {
+        padding-inline: 10px;
+        margin: auto;
+    }
+
+    .academics-detail h1 {
+        font-size: 50px;
+    }
+
+    .academics-detail h3 {
+        font-size: 30px;
+    }
+
+    .academics-detail p {
+        display: none;
     }
 }
