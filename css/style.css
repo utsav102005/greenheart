@@ -2385,6 +2385,9 @@ h1 span {
 .menu-btn-close {
     display: none;
 }
+.menu-btn{
+    display: none;
+}
 
 .better {
     color: var(--color-accent);

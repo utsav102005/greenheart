@@ -1,4 +1,4 @@
-@media (max-width:1440px) {
+@media (max-width:2560px) {
     .menu-btn {
         display: none;
     }
@@ -7,10 +7,9 @@
 @media (max-width:1200px) {
     .menu-btn {
         display: block;
-        color: black;
     }
     .menu-btn{
-        display: none;
+        display: block;
     }
 
     .menu.active {
@@ -75,10 +74,6 @@
         padding: 30px 20px;
     }
 
-    .menu-btn {
-        display: block;
-        color: black;
-    }
 
     .menu.active {
         padding-top: 100px;
