@@ -760,7 +760,8 @@
     }
 
     .hero-content h1 {
-        font-size: 30px;
+        font-size: 50px;
+        padding-top: 150px;
 
     }
 
@@ -808,6 +809,13 @@
         font-size: 30px;
         padding-left: 0%;
     }
+    .banner-content h1{
+        flex-direction: column;
+        font-size: 26px;
+    }
+    .banner-content img{
+        object-fit: cover;
+    }
 
     .Academics h1 {
         font-size: 50px;
@@ -838,6 +846,9 @@
 
     .about-content h2 {
         font-size: 16px;
+    }
+    .about-content h2 strong{
+        font-size: 36px;
     }
 
     .about-content small {

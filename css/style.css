@@ -19,15 +19,15 @@
 
 .container {
     width: 100%;
-    max-width: 1480px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 16px;
     box-sizing: border-box;
 }
 
-.footer-container {
-    max-width: 100%;
-}
+/* .footer-container {
+    max-width: 100%
+} */
 
 .cir {
     border: 1px solid rgba(113, 108, 108, 0.207);
@@ -78,7 +78,7 @@ body h1 {
 
 .btn {
     display: inline-block;
-    background-color: #4CAF50;
+    background-color: var(--color-accent);
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -313,7 +313,7 @@ body h1 {
 }
 
 .hero-content h1 {
-    font-size:110px;
+    font-size: 110px;
     font-weight: 700;
     margin: 0;
     line-height: 1.1;
@@ -360,12 +360,13 @@ body h1 {
     max-width: 550px;
 }
 
-.about-content h2 strong{
+.about-content h2 strong {
     font-weight: 800;
     font-size: 60px;
     font-family: var(--font-Regular);
 }
-.about-content h2 span{
+
+.about-content h2 span {
     font-size: 60px;
     font-weight: 500;
     font-family: var(--font-Regular);
@@ -374,6 +375,7 @@ body h1 {
 
 .about-content p {
     font-size: 15px;
+    opacity: 50%;
     line-height: 1.6;
     color: var(--color-muted);
 }
@@ -485,6 +487,8 @@ body h1 {
 .banner-content h1 {
     font-size: 60px;
     margin: 0 0 20px 0;
+    display: flex;
+    align-items: center;
     font-family: var(--font-Regular);
 }
 
@@ -794,12 +798,23 @@ body h1 {
     padding-block: 10px;
 }
 
-.social-icons a img {
+
+.social-icons {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons>* {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--color-accent);
     border-radius: 50%;
-    padding: 20px;
-    margin: 20px;
 }
+
 
 
 .partners {
@@ -1855,9 +1870,11 @@ p {
     display: flex;
     justify-content: space-around;
 }
-.cation-detail  .left h1 span{
-font-weight: 300;
+
+.cation-detail .left h1 span {
+    font-weight: 300;
 }
+
 .left h1 {
     font-size: 90px;
     max-width: 580px;
@@ -1923,7 +1940,8 @@ font-weight: 300;
     padding-block: 5px;
     font-size: 15px;
 }
-.thik{
+
+.thik {
     padding-top: 300px;
 }
 
@@ -2207,7 +2225,7 @@ font-weight: 300;
 
 .hero-sectoin-policy {
     height: 100vh;
-    background-image:linear-gradient(to bottom,
+    background-image: linear-gradient(to bottom,
             rgba(0, 0, 0, 0.50),
             /* top gradient with 25% opacity */
             rgba(255, 255, 255, 0)
