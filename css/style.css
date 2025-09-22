@@ -138,7 +138,14 @@ body h1 {
 
 
 .hero-sectoin-index {
-    background-image: url(../images/section/first-image.png);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.50),
+            /* top gradient with 25% opacity */
+            rgba(255, 255, 255, 0)
+            /* fade to transparent */
+        ), url(../images/section/first-image.png);
+    height: 100vh;
+    width: 100%;
     background-size: cover;
 }
 
@@ -305,12 +312,11 @@ body h1 {
     font-family: Raleway, Extrabold;
 }
 
-.hero h1 {
-    font-size: clamp(2.5rem, 8vw, 5rem);
-    font-weight: 900;
+.hero-content h1 {
+    font-size:110px;
+    font-weight: 700;
     margin: 0;
     line-height: 1.1;
-    text-transform: uppercase;
     font-family: var(--font-extra-bold);
 }
 
@@ -2190,7 +2196,12 @@ font-weight: 300;
 
 .hero-sectoin-work {
     height: 70vh;
-    background-image: url(../images/section/for-as.png);
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.50),
+            /* top gradient with 25% opacity */
+            rgba(255, 255, 255, 0)
+            /* fade to transparent */
+        ), url(../images/section/for-as.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -2198,7 +2209,12 @@ font-weight: 300;
 
 .hero-sectoin-policy {
     height: 100vh;
-    background-image: url(../images/section/Subtraction\ 5.png);
+    background-image:linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.50),
+            /* top gradient with 25% opacity */
+            rgba(255, 255, 255, 0)
+            /* fade to transparent */
+        ), url(../images/section/Subtraction\ 5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
