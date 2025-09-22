@@ -135,11 +135,16 @@
     .footer2 {
         font-size: 16px;
     }
+    .container p{
+        font-size: 50px;
+    }
 
     .footer3 {
         gap: 15px;
     }
-
+.three-col-div{
+    flex-wrap: wrap;
+}
     .social-icons {
         display: flex;
         gap: 15px;
@@ -540,6 +545,9 @@
         color: black;
         overflow: hidden;
         line-height: normal;
+    }
+    .container p{
+        font-size: 20px;
     }
 
     .BENEFITS {
