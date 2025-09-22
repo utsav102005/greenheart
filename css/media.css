@@ -8,7 +8,8 @@
     .menu-btn {
         display: block;
     }
-    .menu-btn{
+
+    .menu-btn {
         display: block;
     }
 
@@ -135,16 +136,19 @@
     .footer2 {
         font-size: 16px;
     }
-    .container p{
+
+    .container p {
         font-size: 50px;
     }
 
     .footer3 {
         gap: 15px;
     }
-.three-col-div{
-    flex-wrap: wrap;
-}
+
+    .three-col-div {
+        flex-wrap: wrap;
+    }
+
     .social-icons {
         display: flex;
         gap: 15px;
@@ -546,7 +550,8 @@
         overflow: hidden;
         line-height: normal;
     }
-    .container p{
+
+    .container p {
         font-size: 20px;
     }
 
@@ -829,6 +834,14 @@
 
     .working-as p {
         display: none;
+    }
+
+    .about-content h2 {
+        font-size: 16px;
+    }
+
+    .about-content small {
+        padding-top: 100px;
     }
 
 

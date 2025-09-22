@@ -479,14 +479,9 @@ body h1 {
 }
 
 .banner-content h1 {
-    font-size: clamp(1.5rem, 4vw, 3rem);
-    font-weight: 700;
+    font-size: 60px;
     margin: 0 0 20px 0;
     font-family: var(--font-Regular);
-}
-
-.banner-content h1 span {
-    font-weight: 900;
 }
 
 .banner-content img {
@@ -1397,8 +1392,6 @@ body h1 {
 
     border-radius: 50%;
 }
-
-.cccc {}
 
 .img img {
     padding: 35px;
