@@ -28,10 +28,27 @@
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg>
                     </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Who We Are</button>
+                        <div class="dropdown-content">
+                            <a href="ethos.html">OUR ETHOS</a>
+                            <a href="leadership.html">LEADERSHIP</a>
+                            <a href="Governer.html">OUR TEAM</a>
+                            <a href="contact.html">JOIN US</a>
+                        </div>
+                    </div>
 
-                    <a href="trust.html">WHO WE ARE +</a>
+                    <!-- <a href="trust.html">WHO WE ARE +</a> -->
                     <a href="Academies.html">ACADEMIES</a>
-                    <a href="work-for-us.html">WORKING FOR US +</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">WORKING FOR US </button>
+                        <div class="dropdown-content">
+                            <a href="more-info.html">MORE INFO</a>
+                            <a href="trust.html">TRUST</a>
+                            <a href="vacances.html">VACANCES</a>
+                        </div>
+                    </div>
+                    <!-- <a href="work-for-us.html">WORKING FOR US +</a> -->
                     <a href="action.html">IN ACTION</a>
                     <a href="polices.html">POLICIES</a>
 
@@ -200,22 +217,7 @@
             </div>
         </div>
     </footer>
-    <script>
-
-        let btn = document.querySelector(".menu-btn")
-        let store = document.querySelector(".menu")
-        btn.addEventListener('click', () => {
-            store.classList.add("active")
-        })
-
-        let btnclose = document.querySelector(".menu-btn-close")
-        btnclose.addEventListener('click', () => {
-            store.classList.remove("active")
-        })
-
-
-
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
