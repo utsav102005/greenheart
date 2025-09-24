@@ -200,6 +200,7 @@
 
     .social-icons {
         display: flex;
+        justify-content: space-around;
         gap: 15px;
         width: 100%;
         margin-top: 10px;
@@ -1049,12 +1050,6 @@
         height: 100%;
         flex-direction: column;
         gap: 30px;
-    }
-
-    .circle-1,
-    .circle-2,
-    .circle-3 p {
-        display: none;
     }
 
     .aims {

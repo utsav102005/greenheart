@@ -905,6 +905,7 @@ body h1 {
 .social-icons {
     width: 100%;
     display: flex;
+    justify-content: space-around;
     gap: 10px;
 }
 
