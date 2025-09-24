@@ -183,7 +183,9 @@
     .cation-detail {
         flex-direction: column;
     }
-
+.aims h1{
+    font-size: 100px;
+}
     .thik {
         padding-top: 50px;
     }
@@ -322,9 +324,15 @@
     .BENEFITS h1 {
         font-size: 30px;
     }
+    .three-circle{
+        margin-top: -80px;
+    }
 
     .three-circle h5 {
         padding-block: 5px;
+    }
+    .aims h1{
+        font-size: 60px;
     }
 
     .green h1 {
