@@ -114,13 +114,15 @@
         background-color: black;
 
     }
-    .partners{
+
+    .partners {
         flex-direction: column;
     }
-    .banner-content h1{
+
+    .banner-content h1 {
         flex-direction: column;
     }
-   
+
 
 
     .menu ul li a {
@@ -143,7 +145,9 @@
     .footer2 {
         font-size: 16px;
     }
-
+.black{
+    flex-direction: column;
+}
 
     .footer3 {
         gap: 15px;
@@ -153,11 +157,38 @@
         flex-wrap: wrap;
     }
 
+    .Academics h1 {
+        font-size: 110px;
+    }
+
+    .function {
+        flex-direction: column;
+    }
+
+    .cation-detail {
+        flex-direction: column;
+    }
+
+    .thik {
+        padding-top: 50px;
+    }
+
+    .fr {
+        margin-left: 50px;
+    }
+
+    .right p {
+        margin-top: 0px;
+    }
+
     .social-icons {
         display: flex;
         gap: 15px;
         width: 100%;
         margin-top: 10px;
+    }
+    .academy-section{
+        flex-direction: column;
     }
 
     .social-icons a img {
@@ -335,13 +366,16 @@
         margin: 20px;
     }
 
+
     .banner-content h1 {
         flex-direction: column;
     }
-.partnerslogo {
-        overflow:scroll;
-        
+
+    .partnerslogo {
+        overflow: scroll;
+
     }
+
     .about-section {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
@@ -416,7 +450,26 @@
     .name {
         display: none;
     }
-
+.Academics h3{
+    font-size: 50px;
+    padding-left: 0px;
+}
+.Academics h1{
+    font-size: 50px;
+}
+.better{
+    font-size: 50px;
+}
+.life{
+    font-size: 50px;
+}
+.grid{
+    grid-template-columns:repeat(1, 1fr);
+}
+.academy-section{
+    padding: 0%;
+    flex-direction: column;
+}
     .fl img {
         width: 80vw;
         padding: 10px;
@@ -463,8 +516,8 @@
     }
 
     .partnerslogo {
-        overflow:scroll;
-        
+        overflow: scroll;
+
     }
 
     .working {
