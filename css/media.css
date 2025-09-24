@@ -114,6 +114,13 @@
         background-color: black;
 
     }
+    .partners{
+        flex-direction: column;
+    }
+    .banner-content h1{
+        flex-direction: column;
+    }
+   
 
 
     .menu ul li a {
@@ -178,11 +185,6 @@
         width: 36px;
         height: 36px;
         padding: 10px;
-    }
-
-    .partnerslogo {
-        overflow: hidden;
-        display: none;
     }
 
     .working {
@@ -295,6 +297,15 @@
 
     }
 
+    .hero-content h1 {
+        padding-top: 50px;
+        font-size: 70px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+
     .jason img {
         width: 100vw;
     }
@@ -322,6 +333,17 @@
     .governer-para {
         font-size: 55px;
         margin: 20px;
+    }
+
+    .banner-content h1 {
+        flex-direction: column;
+    }
+.partnerslogo {
+        overflow:scroll;
+        
+    }
+    .about-section {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 
     .leaders {
@@ -441,8 +463,8 @@
     }
 
     .partnerslogo {
-        overflow: hidden;
-        display: none;
+        overflow:scroll;
+        
     }
 
     .working {
@@ -547,7 +569,8 @@
     .bg-only {
         size: 100vw;
     }
-    .container p{
+
+    .container p {
         font-size: 16px;
     }
 
@@ -764,6 +787,7 @@
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .heding {
         margin-inline: 10px;
     }
@@ -840,6 +864,7 @@
     .BENEFITS h1 {
         padding-top: 20px;
     }
+
     .action-main h1 {
         padding-top: 50px;
         font-size: 50px;
@@ -949,12 +974,42 @@
     }
 
     .aims {
-        height: 100vh;
+        height: 100%;
         overflow-x: scroll;
     }
 
     .what-matter h1 {
         padding-top: 50px;
         font-size: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .navbar-wraper img {
+        width: 100%;
+    }
+
+    .about-content h2 span {
+        font-size: 40px;
+    }
+
+    .academy-content h2 span {
+        font-size: 50px;
+    }
+
+    .thik {
+        padding-top: 50px;
+    }
+
+    .aims h1 {
+        font-size: 40px;
+    }
+
+    .action-main h1 {
+        font-size: 40px;
+    }
+
+    .containerp h2 {
+        font-size: 35px;
     }
 }

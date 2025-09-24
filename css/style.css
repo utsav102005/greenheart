@@ -295,11 +295,11 @@ body h1 {
     margin-left: 5px;
 }
 
-/* Dropdown content */
+/* Dropdown content
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 100vw;
+    max-width: 100px;
     top: 100%;
     left: 0;
     background-color: white;
@@ -315,7 +315,7 @@ body h1 {
     display: block;
     text-transform: none;
     font-weight: normal;
-}
+} */
 
 .dropdown-content a:hover {
     background-color: #f2f2f2;
@@ -980,9 +980,8 @@ body h1 {
     position: absolute;
     align-items: center;
     background-color: white;
-    width: 100vw;
+    width: 200px;
     border-radius: 6px;
-    margin-top: 4px;
     z-index: 1;
     left: 0;
 }
