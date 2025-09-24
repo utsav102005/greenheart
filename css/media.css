@@ -64,14 +64,17 @@
     .menu-btn-close {
         display: block;
     }
-    .campign-grid{
+
+    .campign-grid {
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
     }
-    .green{
+
+    .green {
         flex-direction: column;
     }
-    .green h1{
+
+    .green h1 {
         font-size: 70px;
         padding-top: 20px;
     }
@@ -156,9 +159,10 @@
     .footer2 {
         font-size: 16px;
     }
-.black{
-    flex-direction: column;
-}
+
+    .black {
+        flex-direction: column;
+    }
 
     .footer3 {
         gap: 15px;
@@ -198,7 +202,8 @@
         width: 100%;
         margin-top: 10px;
     }
-    .academy-section{
+
+    .academy-section {
         flex-direction: column;
     }
 
@@ -461,26 +466,33 @@
     .name {
         display: none;
     }
-.Academics h3{
-    font-size: 50px;
-    padding-left: 0px;
-}
-.Academics h1{
-    font-size: 50px;
-}
-.better{
-    font-size: 50px;
-}
-.life{
-    font-size: 50px;
-}
-.grid{
-    grid-template-columns:repeat(1, 1fr);
-}
-.academy-section{
-    padding: 0%;
-    flex-direction: column;
-}
+
+    .Academics h3 {
+        font-size: 50px;
+        padding-left: 0px;
+    }
+
+    .Academics h1 {
+        font-size: 50px;
+    }
+
+    .better {
+        font-size: 50px;
+    }
+
+    .life {
+        font-size: 50px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .academy-section {
+        padding: 0%;
+        flex-direction: column;
+    }
+
     .fl img {
         width: 80vw;
         padding: 10px;
@@ -622,7 +634,7 @@
     }
 
     .green h1 {
-        font-size: 140px;
+        font-size: 50px;
     }
 
     .green {
@@ -1076,4 +1088,19 @@
     .containerp h2 {
         font-size: 35px;
     }
+    .green img{
+        width: 250px;
+    }
+        .green h1{
+            font-size: 50px;
+        }
+       .btn-white{
+        padding: 10px 20px;
+        font-size: 16px;
+    
+       }
+       .green .btn-white
+{
+margin: 10px;
+}
 }
