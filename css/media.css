@@ -224,11 +224,6 @@
         margin: 16px;
     }
 
-
-    .green-section {
-        overflow: scroll;
-    }
-
     .texts h1 {
         font-size: 40px;
         padding-top: 10px;
@@ -279,11 +274,6 @@
         font-size: 30px;
     }
 
-    .three-circle {
-        overflow: scroll;
-        gap: 5px;
-    }
-
     .three-circle h5 {
         padding-block: 5px;
     }
@@ -329,8 +319,9 @@
         flex-direction: column;
     }
 
-    .governer-para h1 {
+    .governer-para {
         font-size: 55px;
+        margin: 20px;
     }
 
     .leaders {
@@ -343,23 +334,10 @@
         width: 90vw;
     }
 
-    .campign-grid img {
-        width: 90vw;
-    }
-
-    .campign-grid {
-        overflow: scroll;
-        gap: 50px;
-        margin-top: 100px;
-    }
-
     .container p {
         margin-bottom: 40px;
     }
 
-    .aims h1 {
-        font-size: 50px;
-    }
 
     .contact-section {
         flex-direction: column;
@@ -506,10 +484,6 @@
         width: 100vw;
     }
 
-    .green-section {
-        overflow: scroll;
-    }
-
     .texts h1 {
         font-size: 40px;
         padding-top: 10px;
@@ -561,25 +535,20 @@
         font-size: 30px;
     }
 
-    .three-circle {
-        overflow: scroll;
-        padding-top: 100px;
-    }
-
-    .three-circle h5 {
-        padding-block: 5px;
-    }
-
     .green h1 {
-        font-size: 20px;
+        font-size: 140px;
     }
 
     .green {
         flex-direction: column;
+        text-align: center;
     }
 
     .bg-only {
         size: 100vw;
+    }
+    .container p{
+        font-size: 16px;
     }
 
     .jason {
@@ -612,7 +581,7 @@
     }
 
     .governer-para h1 {
-        font-size: 55px;
+        font-size: 30px;
     }
 
     .leaders {
@@ -630,13 +599,15 @@
     }
 
     .campign-grid {
-        overflow: scroll;
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
         margin-top: 100px;
     }
 
     .container p {
         margin-bottom: 40px;
+        font-size: 16px;
+        opacity: 1;
     }
 
     .aims h1 {
@@ -793,7 +764,6 @@
     .grid {
         grid-template-columns: repeat(1, 1fr);
     }
-
     .heding {
         margin-inline: 10px;
     }
@@ -806,11 +776,13 @@
         font-size: 30px;
         padding-left: 0%;
     }
-    .banner-content h1{
+
+    .banner-content h1 {
         flex-direction: column;
         font-size: 26px;
     }
-    .banner-content img{
+
+    .banner-content img {
         object-fit: cover;
     }
 
@@ -844,7 +816,8 @@
     .about-content h2 {
         font-size: 16px;
     }
-    .about-content h2 strong{
+
+    .about-content h2 strong {
         font-size: 36px;
     }
 
@@ -864,21 +837,9 @@
         height: 100px;
     }
 
-    .three-circle {
-        flex-direction: column;
-        gap: 150px;
-        align-items: center;
-        justify-content: center;
-    }
-
     .BENEFITS h1 {
         padding-top: 20px;
     }
-
-    .green {
-        display: none;
-    }
-
     .action-main h1 {
         padding-top: 50px;
         font-size: 50px;
@@ -965,5 +926,35 @@
 
     .academics-detail p {
         display: none;
+    }
+
+    .ethos h1 {
+        font-size: 40px;
+        margin-top: 200px;
+    }
+
+    .circle-1,
+    .circle-2,
+    .circle-3 {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .circle-1,
+    .circle-2,
+    .circle-3 p {
+        display: none;
+    }
+
+    .aims {
+        height: 100vh;
+        overflow-x: scroll;
+    }
+
+    .what-matter h1 {
+        padding-top: 50px;
+        font-size: 25px;
     }
 }

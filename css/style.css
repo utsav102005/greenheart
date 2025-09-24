@@ -24,6 +24,9 @@
     padding: 0 16px;
     box-sizing: border-box;
 }
+.container p{
+    font-family: var(--font-Regular) ;
+}
 
 /* .footer-container {
     max-width: 100%
@@ -44,7 +47,9 @@
     text-align: center;
 }
 
-.circle-1 {
+.circle-1,
+.circle-2,
+.circle-3 {
     background-color: white;
     border-radius: 50%;
     box-shadow: 6px 0px 50px 17px #00000010;
@@ -256,88 +261,90 @@ body h1 {
     font-size: 14px;
     color: white;
 }
-.down-a a{
+
+.down-a a {
     position: absolute;
     opacity: 0;
 }
 
-.dropbtn :hover{
+.dropbtn :hover {
     opacity: 1;
 }
 
 
 
 .dropdown {
-      position: relative;
-      display: inline-block;
-    }
+    position: relative;
+    display: inline-block;
+}
 
-    .dropbtn {
-      background: none;
-      border: none;
-      font: inherit;
-      color: #e0e0e0;
-      font-weight: bold;
-      text-transform: uppercase;
-      cursor: pointer;
-      padding: 0;
-    }
+.dropbtn {
+    background: none;
+    border: none;
+    font: inherit;
+    color: #e0e0e0;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+}
 
-    .dropbtn::after {
-      content: " +";
-      font-weight: bold;
-      margin-left: 5px;
-    }
+.dropbtn::after {
+    content: " +";
+    font-weight: bold;
+    margin-left: 5px;
+}
 
-    /* Dropdown content */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      width: 100vw;
-      top: 100%;
-      left: 0;
-      background-color: white;
-      min-width: 180px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
+/* Dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
-    .dropdown-content a {
-      color: #333;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-transform: none;
-      font-weight: normal;
-    }
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: none;
+    font-weight: normal;
+}
 
-    .dropdown-content a:hover {
-      background-color: #f2f2f2;
-    }
+.dropdown-content a:hover {
+    background-color: #f2f2f2;
+}
 
-    /* Show dropdown on hover */
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
-    .navbar a:hover,
-    .dropdown:hover .dropbtn {
-      color: #ffffff;
-    }
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    color: #ffffff;
+}
 
-    /* Get in touch button */
-    .navbar .btn {
-      background-color: #5cbfaa;
-      padding: 14px 24px;
-      border-radius: 2px;
-      color: white;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+/* Get in touch button */
+.navbar .btn {
+    background-color: #5cbfaa;
+    padding: 14px 24px;
+    border-radius: 2px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-    .navbar .btn:hover {
-      background-color: #4aa895;
-    }
+.navbar .btn:hover {
+    background-color: #4aa895;
+}
+
 .menu a {
     text-decoration: none;
     font-weight: bold;
@@ -712,8 +719,9 @@ body h1 {
 .green h1 {
     font-family: var(--font-extra-bold);
     font-size: 110px;
+    font-weight: 700;
     color: var(--color-text);
-    padding-top: 220px;
+    padding-top: 150px;
 }
 
 .green h5 {
@@ -1131,6 +1139,7 @@ body h1 {
 .governer-para p {
     max-width: 700px;
     line-height: 20px;
+    font-family: var(--font-Regular);
     opacity: 70%;
 }
 
@@ -1172,8 +1181,8 @@ body h1 {
 }
 
 .members::-webkit-scrollbar-thumb {
-    background: #ccc;
-    border-radius: 3px;
+    background: #000000;
+    border-radius: 5px;
 }
 
 #membersh1 {
@@ -1539,12 +1548,11 @@ body h1 {
 
 .green img {
     padding: 20px;
-    height: 100%;
-    width: auto;
+    width: 500px;
 }
 
 .green .btn-white {
-    margin-inline: 100px;
+    margin: 50px;
 }
 
 .btn-white {
@@ -1590,13 +1598,14 @@ body h1 {
 
 .aims h1 {
     font-size: 130px;
-    padding-top: 100px;
+    padding-block: 100px;
     text-align: center;
 }
 
 .aims {
     background-color: var(--color-text);
     margin-top: -120px;
+    height: 100vh;
     clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
 }
 
@@ -1650,8 +1659,8 @@ body h1 {
 
 .campign-grid {
     display: grid;
+    gap: 50px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     margin: auto;
 }
 
@@ -2192,6 +2201,7 @@ p {
 
 .enqiury {
     margin-top: -100px;
+    position: relative;
     z-index: 1;
 }
 
