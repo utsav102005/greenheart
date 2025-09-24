@@ -64,6 +64,17 @@
     .menu-btn-close {
         display: block;
     }
+    .campign-grid{
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+    .green{
+        flex-direction: column;
+    }
+    .green h1{
+        font-size: 70px;
+        padding-top: 20px;
+    }
 
 
 }
