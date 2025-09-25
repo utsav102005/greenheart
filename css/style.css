@@ -934,6 +934,7 @@ body h1 {
 }
 
 .partnerslogo {
+    overflow: scroll;
     display: inline-flex;
     width: 100%;
     gap: 40px;
