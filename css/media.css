@@ -74,10 +74,6 @@
         margin: auto;
     }
 
-    .green {
-        flex-direction: column;
-    }
-
     .green h1 {
         font-size: 70px;
         padding-top: 20px;
@@ -144,7 +140,9 @@
     .banner-content h1 {
         flex-direction: column;
     }
-
+.partners p{
+    width: 40%;
+}
 
 
     .menu ul li a {
@@ -220,11 +218,26 @@
         flex-direction: column;
     }
 
+    .what-we-do {
+        flex-direction:column-reverse;
+        margin-left: 0;
+    }
+
+
     .social-icons a img {
         padding: 12px;
         margin: 0;
         width: 40px;
         height: 40px;
+    }
+
+    .working {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-academies {
+        flex-direction: column;
     }
 }
 
@@ -247,10 +260,6 @@
         padding: 10px;
     }
 
-    .working {
-        display: flex;
-        flex-direction: column;
-    }
 
     .working img {
         width: 100vw;
@@ -261,9 +270,7 @@
         justify-content: center;
     }
 
-    .our-academies {
-        flex-direction: column;
-    }
+
 
     .jasonpic {
         width: 300px;
@@ -283,10 +290,7 @@
         width: 100vw;
     }
 
-    .what-we-do {
-        flex-direction: column;
-        margin-left: 0;
-    }
+
 
     .section-image img {
         margin: 16px;
@@ -355,17 +359,28 @@
     }
 
     .green h1 {
-        font-size: 20px;
+        font-size: 45px;
+        padding: 14px;
+
+    }
+    .green p{
+        max-width: 100%;
     }
 
     .green {
+        text-align: center;
         flex-direction: column;
+        padding-top: 50px;
     }
 
     .bg-only {
         size: 100vw;
     }
-
+.partners p{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
     .jason {
         flex-direction: column;
 
@@ -600,11 +615,6 @@
 
     .ethos img {
         width: 100vw;
-    }
-
-    .what-we-do {
-        flex-direction: column;
-
     }
 
     .what-we-do img {

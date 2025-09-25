@@ -919,7 +919,7 @@ body h1 {
 
 .partners p {
     font-size: 25px;
-    width: 30%;
+    width: 40%;
 }
 
 .partnerslogo {
@@ -1519,10 +1519,9 @@ body h1 {
 
 
 .green {
-    background-color: var(--color-accent);
+    padding-top: 200px;
     display: flex;
     margin-block: 30px;
-    align-items: center;
     justify-content: space-around;
     color: var(--color-text);
 }
