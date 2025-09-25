@@ -29,6 +29,10 @@
 
     }
 
+    .member-detail p {
+        max-width: 100%;
+    }
+
     .menu {
         display: none;
     }
@@ -78,7 +82,8 @@
         font-size: 70px;
         padding-top: 20px;
     }
-    .partnerslogo{
+
+    .partnerslogo {
         overflow: hidden;
     }
 
@@ -186,9 +191,11 @@
     .cation-detail {
         flex-direction: column;
     }
-.aims h1{
-    font-size: 100px;
-}
+
+    .aims h1 {
+        font-size: 100px;
+    }
+
     .thik {
         padding-top: 50px;
     }
@@ -256,6 +263,12 @@
 
     .our-academies {
         flex-direction: column;
+    }
+
+    .jasonpic {
+        width: 300px;
+        height: 300px;
+        margin: auto;
     }
 
     .our-academies img {
@@ -328,14 +341,16 @@
     .BENEFITS h1 {
         font-size: 30px;
     }
-    .three-circle{
+
+    .three-circle {
         margin-top: -80px;
     }
 
     .three-circle h5 {
         padding-block: 5px;
     }
-    .aims h1{
+
+    .aims h1 {
         font-size: 60px;
     }
 
@@ -365,18 +380,14 @@
         flex-direction: column;
     }
 
-    .jason img {
-        width: 100vw;
-    }
 
     .member-detail h1 {
-        padding-top: 30px;
-        color: black;
+        text-align: center;
+        color: rgb(255, 255, 255);
         font-size: 30px;
     }
 
     .more-info {
-        padding-top: 500px;
         text-align: center;
         justify-content: center;
     }
@@ -419,6 +430,7 @@
     }
 
     .container p {
+        width: 100%;
         margin-bottom: 40px;
     }
 
@@ -469,6 +481,11 @@
 
         font-size: 30px;
 
+    }
+
+    .jasonpic {
+        width: 100%;
+        height: 100%;
     }
 
     .quote-section {
@@ -667,18 +684,7 @@
 
     }
 
-    .jason img {
-        width: 100vw;
-    }
-
-    .member-detail h1 {
-        padding-top: 30px;
-        color: black;
-        font-size: 30px;
-    }
-
     .more-info {
-        padding-top: 500px;
         text-align: center;
         justify-content: center;
     }
@@ -1094,19 +1100,22 @@
     .containerp h2 {
         font-size: 35px;
     }
-    .green img{
+
+    .green img {
         width: 250px;
     }
-        .green h1{
-            font-size: 50px;
-        }
-       .btn-white{
+
+    .green h1 {
+        font-size: 50px;
+    }
+
+    .btn-white {
         padding: 10px 20px;
         font-size: 16px;
-    
-       }
-       .green .btn-white
-{
-margin: 10px;
-}
+
+    }
+
+    .green .btn-white {
+        margin: 10px;
+    }
 }

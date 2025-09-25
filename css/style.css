@@ -1211,15 +1211,15 @@ body h1 {
 }
 
 .div1 {
-    background-image: url(../images/section/div1/Rectangle\ 242.png);
+    background-image: url(../images/section/div1/Rectangle242.png);
 }
 
 .div2 {
-    background-image: url(../images/section/div2/Rectangle\ 845.png);
+    background-image: url(../images/section/div2/Rectangle845.png);
 }
 
 .div3 {
-    background-image: url(../images/section/div3/Rectangle\ 846.png);
+    background-image: url(../images/section/div3/Rectangle846.png);
 }
 
 .black-btn {
@@ -1232,24 +1232,23 @@ body h1 {
     text-decoration: none;
 }
 
-.black-bg {
+.section-bg {
     background-color: #000;
-    width: 100%;
-    height: 50vh;
-}
-
-.black-bg img {
-    height: 450px;
-    width: 560px;
+    width: 100vw;
 }
 
 .jason {
-    padding: 30px;
+    padding: 16px;
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-around;
-    align-items: center;
     color: var(--color-text);
+}
+
+.jason img {
+    width: 100%;
+    height: 100%;
 }
 
 .jason-detail h1 {
@@ -1263,11 +1262,12 @@ body h1 {
 
 .member-detail h1 {
     font-size: 60px;
-    padding: 30px;
+    padding-bottom: 20px;
 }
 
 .member-detail p {
     line-height: 25px;
+    color: var(--color-text);
 
 }
 
@@ -1286,8 +1286,6 @@ body h1 {
 
 .row {
     margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 0;
 }
@@ -1718,7 +1716,7 @@ body h1 {
 
 /* Left side (info) */
 .contact-info {
-    flex: 1;
+    padding: 16px;
 }
 
 .contact-info h2 {
@@ -1813,13 +1811,12 @@ textarea {
 
 
 .enquiry-box {
+    margin: auto;
     background: #3ac86b;
     padding: 40px;
     border-radius: 8px;
     max-width: 400px;
-    width: 100%;
     text-align: center;
-    color: #111;
 }
 
 .enquiry-box h2 {
@@ -1835,12 +1832,8 @@ textarea {
 }
 
 .enquiry-box input {
-    width: 100%;
-    padding: 14px;
     margin-bottom: 15px;
-    border: none;
     background: rgba(255, 255, 255, 0.4);
-    font-size: 14px;
 }
 
 .file-upload {
@@ -1879,8 +1872,8 @@ textarea {
 
 
 .partners-section {
+    margin: auto;
     max-width: 800px;
-    background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
