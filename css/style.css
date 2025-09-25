@@ -717,12 +717,8 @@ body h1 {
     clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.green h1 {
-    font-family: var(--font-extra-bold);
+.green h1 {padding: 24px;
     font-size: 110px;
-    font-weight: 700;
-    color: var(--color-text);
-    padding-top: 150px;
 }
 
 .green h5 {
@@ -1533,7 +1529,8 @@ body h1 {
 
 .green img {
     padding: 20px;
-    width: 100%;
+    width: 90%;
+    height: auto;
 }
 
 .green .btn-white {
