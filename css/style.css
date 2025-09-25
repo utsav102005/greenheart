@@ -64,7 +64,6 @@ body p {
 
 body h1 {
     font-family: "Raleway", sans-serif;
-    font-optical-sizing: auto;
 }
 
 
@@ -253,10 +252,6 @@ body h1 {
     color: white;
     list-style: none;
     text-align: center;
-}
-
-.menu active a img {
-    size: 26px;
 }
 
 .dropbtn {
@@ -738,7 +733,6 @@ body h1 {
 }
 
 .green p {
-    font-family: var(popins-light);
     font-size: 16px;
     color: var(--color-text);
     line-height: 20px;
@@ -751,7 +745,6 @@ body h1 {
     flex-direction: column;
     gap: 40px;
     justify-content: space-around;
-    align-items: left;
     text-align: left;
 }
 
@@ -1182,15 +1175,6 @@ body h1 {
     border-bottom: 5px solid black;
     scrollbar-width: thin;
     -ms-overflow-style: none;
-}
-
-.members::-webkit-scrollbar {
-    height: 6px;
-}
-
-.members::-webkit-scrollbar-thumb {
-    background: #000000;
-    border-radius: 5px;
 }
 
 #membersh1 {
