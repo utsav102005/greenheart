@@ -97,7 +97,8 @@ body h1 {
     background-color: #45a049;
     /* darker green */
 }
-.three-circle{
+
+.three-circle {
     margin-top: -150px;
     height: 800px;
     overflow-x: scroll;
@@ -924,7 +925,6 @@ body h1 {
 .partners {
     background-color: var(--color-accent);
     display: flex;
-    justify-content: space-between;
     padding: 30px;
     align-items: center;
 }
@@ -934,10 +934,9 @@ body h1 {
 }
 
 .partnerslogo {
-    overflow: scroll;
     display: inline-flex;
     width: 100%;
-    gap: 40px;
+    gap: 20px;
     justify-content: space-around;
 }
 
@@ -1489,7 +1488,7 @@ body h1 {
     margin-block: 50px;
 }
 
-.cir-con{
+.cir-con {
     display: flex;
     gap: 100px;
     justify-content: space-around;
