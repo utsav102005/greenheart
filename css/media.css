@@ -140,9 +140,10 @@
     .banner-content h1 {
         flex-direction: column;
     }
-.partners p{
-    width: 40%;
-}
+
+    .partners p {
+        width: 40%;
+    }
 
 
     .menu ul li a {
@@ -205,6 +206,9 @@
     .right p {
         margin-top: 0px;
     }
+    .leaders{
+        flex-wrap: wrap;
+    }
 
     .social-icons {
         display: flex;
@@ -219,7 +223,7 @@
     }
 
     .what-we-do {
-        flex-direction:column-reverse;
+        flex-direction: column-reverse;
         margin-left: 0;
     }
 
@@ -363,7 +367,8 @@
         padding: 14px;
 
     }
-    .green p{
+
+    .green p {
         max-width: 100%;
     }
 
@@ -376,11 +381,13 @@
     .bg-only {
         size: 100vw;
     }
-.partners p{
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-}
+
+    .partners p {
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+
     .jason {
         flex-direction: column;
 
@@ -553,6 +560,11 @@
         overflow: hidden;
     }
 
+    .governer-para h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
     .panel-section {
 
         height: 100vh;
@@ -707,9 +719,7 @@
         flex-direction: column;
     }
 
-    .governer-para h1 {
-        font-size: 30px;
-    }
+
 
     .leaders {
         flex-direction: column;
