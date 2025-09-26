@@ -717,7 +717,8 @@ body h1 {
     clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
 }
 
-.green h1 {padding: 24px;
+.green h1 {
+    padding: 24px;
     font-size: 110px;
 }
 
